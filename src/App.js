@@ -1,9 +1,31 @@
 import React from 'react';
 import logo from './logo.svg';
+import imageSrc from './imageInSrc.jpg';
 import './App.css';
 import './style.css';
 function App() {
- /* return (
+
+return (
+  <div style={{border:`solid 1px black`,  maxidth:"100vw"}}>
+
+    <h1 className="title red">My title</h1>
+
+    <br/>
+
+    <img src={imageSrc}/>
+
+    <br/>
+
+    <img src="/imageInPublic.png" />
+
+
+  </div>
+
+);
+
+
+
+ {/* return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -22,7 +44,7 @@ function App() {
     </div>
    
   );*/
-  let firstName= "will";
+  /*let firstName= "will";
   let lastName ="Smith";
   return(
     <div>
@@ -30,7 +52,8 @@ function App() {
       <p>{firstName} {lastName}</p>
       
     </div>);
-  
+    */
+ }
     
 }
 
