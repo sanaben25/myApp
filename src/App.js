@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import './style.css';
 function App() {
-  return (
+ /* return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,7 +20,18 @@ function App() {
         </a>
       </header>
     </div>
-  );
+   
+  );*/
+  let firstName= "will";
+  let lastName ="Smith";
+  return(
+    <div>
+      <img src="/profile.png" className= "my-profile"/>
+      <p>{firstName} {lastName}</p>
+      
+    </div>);
+  
+    
 }
 
 export default App;
