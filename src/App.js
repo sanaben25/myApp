@@ -3,24 +3,32 @@ import logo from './logo.svg';
 import imageSrc from './imageInSrc.jpg';
 import './App.css';
 import './style.css';
+
+import MyComponent from './MyComponent';
 function App() {
 
 return (
-  <div style={{border:`solid 1px black`,  maxidth:"100vw"}}>
+  <React.Fragment>
+    <div style={{border:`solid 1px black`,  maxidth:"100vw"}}>
 
-    <h1 className="title red">My title</h1>
+        <h1 className="title red">My title</h1>
 
-    <br/>
+        <br/>
 
-    <img src={imageSrc}/>
+        <img src={imageSrc}/>
 
-    <br/>
+        <br/>
 
-    <img src="/imageInPublic.png" />
+        <img src="/imageInPublic.png" />
 
 
-  </div>
+      </div>
 
+      <div className="myApp">
+        <MyComponent />
+
+      </div>
+  </React.Fragment>
 );
 
 
